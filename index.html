@@ -8,31 +8,49 @@
     <title>Budget Manager</title>
   </head>
   <body>
+    
+    
+    <!-- HEADER -->
     <!-- main nav -->
     <div class="header-nav">
+      <img src="" alt="logo"/>
+      <header>
+        <h1>Finance-<span>ly</span></h1>
+        <h2>Manage your finances</h2>
+     </header>
       <div class="nav">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
+          <li class="nav-item">HOME</li>
+          <li class="nav-item">FINANCES</li>
+          <li class="nav-item">EXPENSES</li>
+          <li class="nav-item">CHART</li>
+         </ul>
       </div>
     </div>
 
-    <!-- HEADER -->
-    <div class="header">
-      <h1>Finance-<span>ly</span></h1>
-      <h2>Manage your finances</h2>
-    </div>
-    <div class="displayed">
+    <!-- <div class="displayed">
       <div id="salary"><p id="info"></p></div>
       <div id="expenses"><p id="info"></p></div>
       <div id="savings"><p id="info"></p></div>
+    </div> -->
+    
+    <!-- This are the Nav-items -->
+    <!-- HOME -->
+    <div id="section section-home ">
+      <div class="card">
+        <div class="user-name">
+          <label for="Username">Username</label>
+          <input type="email" name="e-mail" id="e-mail" required />
+        </div>
+        <div class="user-password">
+          <label for="Password">Password</label>
+          <input type="password" name="password" id="password"  required/>
+        </div>
+        <div class="home-btn"><button></button></div>
+        </div>
     </div>
-
-    <!-- This are the inputs & submit -->
-    <div class="input">
+     <!-- FINANCES -->
+    <div id="section section-finances">
       <div class="inp-salary">
         <label for="Salary">Salary</label>
         <input
@@ -62,19 +80,14 @@
       </div>
       <div class="btn"><button onclick="submitTotal()">Submit</button></div>
     </div>
-    <div id="section section-home ">
-      <div class="card">
-        <div class="user-name">
-          <label for="Username"></label>
-          <input type="email" name="e-mail" id="e-mail" required />
-        </div>
-        <div class="user-password">
-          <label for="Password"></label>
-          <input type="password" name="password" id="password" required/>
-        </div>
-        <div class="home-btn"><button onclick="signIn()"></button></div>
-        <div class="forgot">Don't have an account?<a href="">Sign up.</a></div>
-      </div>
-    </div>
+    <!-- EXPENSES -->
+     <div id="section section-expenses">
+      <td>
+        <th>food</th>
+        <th>clothe</th>
+        <th>car maintenace</th>
+        <div class="add-btn"><button>Add Expense</button></div>
+      </td>
+     </div>
   </body>
 </html>
