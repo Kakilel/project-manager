@@ -1,26 +1,65 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.header{
-    border: 1px solid rgb(0, 0, 0);
-    width:80%;
-    padding:10px 20px 20px 20px;
-    margin: 20px auto;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px;
+}
+.header-nav {
+  width: 100%;
+  border: 0px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 1px 1px black;
+  background-color: gray;
+  color: white;
+}
+.nav ul li {
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+}
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 78px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px black;
+  background-color: gray;
+  color: white;
+    
+}
+.section-home{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    border-radius:10px;
-    box-shadow: 1.5px 1.5px rgb(68, 67, 67);
 }
-.header h1{
-    font-weight: bold;
-    font-size: 2.5rem;
+label ,input {
+    margin: 10px;
+    padding: 2px;
 }
-.header h1 span{
-    color: green;
-    text-decoration:underline;
+input{
+    width: 250px;
 }
-
+.home-btn{
+    margin-left: 100px;
+}

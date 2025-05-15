@@ -17,16 +17,17 @@
       <header>
         <h1>Finance-<span>ly</span></h1>
         <h2>Manage your finances</h2>
-     </header>
-      <div class="nav">
-        <ul>
-          <li class="nav-item">HOME</li>
-          <li class="nav-item">FINANCES</li>
-          <li class="nav-item">EXPENSES</li>
-          <li class="nav-item">CHART</li>
-         </ul>
-      </div>
+        <div class="nav">
+          <ul>
+            <li class="nav-item">HOME</li>
+            <li class="nav-item">FINANCES</li>
+            <li class="nav-item">EXPENSES</li>
+            <li class="nav-item">CHART</li>
+          </ul>
+        </div>
+      </header>
     </div>
+      
 
     <!-- <div class="displayed">
       <div id="salary"><p id="info"></p></div>
@@ -36,7 +37,7 @@
     
     <!-- This are the Nav-items -->
     <!-- HOME -->
-    <div id="section section-home ">
+    <div id="section" class="section-home ">
       <div class="card">
         <div class="user-name">
           <label for="Username">Username</label>
@@ -46,48 +47,9 @@
           <label for="Password">Password</label>
           <input type="password" name="password" id="password"  required/>
         </div>
-        <div class="home-btn"><button></button></div>
+        <div class="home-btn"><button>Sign in</button></div>
         </div>
     </div>
-     <!-- FINANCES -->
-    <div id="section section-finances">
-      <div class="inp-salary">
-        <label for="Salary">Salary</label>
-        <input
-          type="number"
-          id="amount"
-          placeholder="Enter amount in ksh"
-          required
-        />
-      </div>
-      <div class="inp-expenses">
-        <label for="Expenses">Expenses</label>
-        <input
-          type="number"
-          id="expenses"
-          placeholder="Enter expenses in ksh"
-          required
-        />
-      </div>
-      <div class="inp-save">
-        <label for="Savings">Savings</label>
-        <input
-          type="number"
-          id="Savings"
-          placeholder="Enter savings in ksh"
-          required
-        />
-      </div>
-      <div class="btn"><button onclick="submitTotal()">Submit</button></div>
-    </div>
-    <!-- EXPENSES -->
-     <div id="section section-expenses">
-      <td>
-        <th>food</th>
-        <th>clothe</th>
-        <th>car maintenace</th>
-        <div class="add-btn"><button>Add Expense</button></div>
-      </td>
-     </div>
+    
   </body>
 </html>

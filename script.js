@@ -7,4 +7,12 @@ const [homeNav, financesNav,expensesNav, chartNav] =navItems
 const sections = document.querySelector(".section")
 const [homeSection, financesSection, expensesSection, chartSection] = sections
 //variables
-let
+let transactions = []
+
+
+
+// Event Listeners
+function changeSection(event) {
+    
+
+}
