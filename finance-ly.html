@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="finance.css">
     <script src="script.js"></script>
     <title>Budget Manager</title>
   </head>
@@ -29,7 +29,7 @@
     <!-- FINANCES -->
     <div id="section section-finances">
       <div class="inp-salary">
-        <label for="Salary">Salary</label>
+        <label for="Salary">Amount</label>
         <input
           type="number"
           id="amount"
@@ -38,32 +38,45 @@
         />
       </div>
       <div class="inp-expenses">
-        <label for="Expenses">Expenses</label>
+        <label for="Expenses">Use</label>
         <input
-          type="number"
+          type="text"
           id="expenses"
           placeholder="Enter expenses in ksh"
           required
         />
       </div>
       <div class="inp-save">
-        <label for="Savings">Savings</label>
+        <label for="Savings">Date</label>
         <input
-          type="number"
+          type="date"
           id="Savings"
           placeholder="Enter savings in ksh"
           required
         />
       </div>
-      <div class="btn"><button onclick="submitTotal()">Submit</button></div>
+      <div class="inp">
+   <select name="choose" class="choose" id="choose">
+    <option value="expenses">Expenses</option>
+    <option value="income">Income</option>
+   </select>
+      </div>
+      <div class="btn"><button>Add</button></div>
     </div>
     <!-- EXPENSES -->
-    <div id="section section-expenses">
-      <td></td>
-      <th>food</th>
-      <th>clothe</th>
-      <th>car maintenace</th>
-      <div class="add-btn"><button>Add Expense</button></div>
-    </div>
+<table id="showcase">
+  <thead>
+   <tr>
+      <th>Use</th>
+      <th>Amount</th>
+      <th>Date</th>
+      <th>Type</th>
+     </tr>
+  </thead>
+  <tbody>
+    <!-- Entries will be added here -->
+  </tbody>
+</table>
+
   </body>
 </html>
