@@ -133,17 +133,39 @@ button:hover {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-left:0;
-  width: 60%;
+  width: 70%;
   display: flex;
 justify-self: center;
 }
 th{
   padding-right: 8rem;
 }
-t
+table{
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #1e2a38;
+  color:rgb(169, 222, 223);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left:0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+}
+th{
+  padding-right: 300px;
+}
 
 
 #showcase li{
   list-style: none;
+}
+@media only screen and (max-width: 1068px) {
+  th{
+    padding-right: 100px;
+  }
+  
 }
 

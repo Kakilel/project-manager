@@ -14,19 +14,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const date = dateInput.value;
     const type = typeSelect.value;
 
+    !localStorage.getItem("transactions")?localStorage.setItem("transactions",JSON.stringify([])):""
+     let transactions = localStorage.getItem(JSON.parse("transactions"))
+
     if (!amount || !use || !date) {
       alert("Please fill in all fields.");
       return;
     }
 
     // Create a new table row
-    const row = document.createElement("tr");
+    const row = document.createElement("tbody");
 
     row.innerHTML = `
-      <td>${use}</td>
-      <td>${amount} Ksh</td>
-      <td>${date}</td>
-      <td>${type.charAt(0).toUpperCase() + type.slice(1)}</td>
+      <th>${use}</th>
+      <th>${amount} Ksh</th>
+      <th>${date}</th>
+      <th>${type.charAt(0).toUpperCase() + type.slice(1)}</th>
     `;
 
     showcase.appendChild(row);
