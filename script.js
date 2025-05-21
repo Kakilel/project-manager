@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const date = dateInput.value;
     const type = typeSelect.value;
 
-   
 
     if (!amount || !use || !date) {
       alert("Please fill in all fields.");
